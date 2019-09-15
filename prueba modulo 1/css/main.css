@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+
+}
+
+#button li {
+ display: inline;
+ }
+
+#button {
+  padding: 0;
+  }
+
+#button li a {
+   font-family: Arial;
+   font-size: 11px;
+   text-decoration: none;
+   float: left;
+   padding: 10px;
+   background-color: #2175bc;
+   color: #fff;
+   }
+
+#button li a:hover {
+  background-color: #2586d7;
+  margin-top: -2;
+  padding-bottom: 12px;]
+ }

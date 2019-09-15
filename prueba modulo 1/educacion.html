@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- entradas generales de html -->
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no ">
+      <link rel="stylesheet" href="css/main.css" />
+      <title>Hoja de Vida</title>
+    </head>
+<body>
+
+<!-- los estilos los puse en el mismo index ya que por alguna razon
+no se me dio para ponerlos con la hoja de estilos aparte aunque a lo
+ultimo si me sirvio asi que deje las dos opciones -->
+    <style type="text/css">
+       li {
+      display: inline;
+      }
+      li a {
+        font-family: Arial;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+        padding: 10px;
+        background-color: #2175bc;
+        color: #fff;
+      }
+      li a:hover {
+        background-color: #2586d7;
+        margin-top: -2;
+        padding-bottom: 12px;]
+      }
+      h1 {
+        color:#4D4A49;
+      }
+      h2{
+        color:#0A46E7;
+      }
+      h3{
+        color:#28D102;
+      }
+
+      h1,h2,h3 {
+        text-align: center;
+      }
+      ul{
+           float: left;
+           list-style-type: none;
+           padding: 0;
+           position: relative;
+           left: 50%;
+       }
+       li{
+           float: left;
+           position: relative;
+           right: 50%;
+       }
+
+       svg {
+         margin-left: 32%;
+         margin-right: 32%;
+       }
+       .footer{
+
+       }
+       footer{
+         width: 100%;
+         float: left;
+         clear: both;
+         box-shadow: 0px 2px 2px #000;
+         border-radius: 5px;
+         background: #5C5D5C;
+
+       }
+       footer section {
+         width: 440px;
+         float: left;
+         padding: 20px;
+       }
+
+    </style>
+
+<!-- esta es la imagen en svg la cual fue creada con inkscape -->
+    <svg width="400" height="220" viewBox="0 0 300 257">
+      <image width="400" height="470" xlink:href=img/inis.svg align="center"></image>
+    </svg>
+<!-- aca tenemos los datos generales como nombre, fecha de nacimiento -->
+    <h1>Hoja de Vida</h1>
+    <h2>Daniel Medina Cossio</h2>
+    <h3>Nacido en medellin, colombia</h3>
+    <h3>16 de mayo de 1988</h3>
+<!-- este es el menu el cual le di estilos mediante css ya que asi simple
+a mi parecer se veia muy feo para ser un menu -->
+    <ul id="button">
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="educacion.html"><strong>Educacion</strong></a></li>
+        <li><a href="Experiencia.html"><strong>Experiencia</strong></a></li>
+    </ul>
+    <!-- se le dio un espaciado para mejor visualizacion -->
+    <br><br>
+
+    <h1>Educacion</h1>
+    <center>
+    <table border="1", cellpadding="10", cellspacing="0">
+      <thead>
+        <tr>
+          <td>Año</td>
+          <td>Institucion </td>
+          <td>Lugar</td>
+          <td>¿Culminó?</td>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2005</td>
+          <td>Instututo akademos</td>
+          <td>Cali, Colombia</td>
+          <td> si </td>
+
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>Universidad del Tirabo</td>
+          <td>Caguas, Puerto rico</td>
+          <td>no</td>
+
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td>Cepcep</td>
+          <td>Cali,Colombia</td>
+          <td>no</td>
+
+        </tr>
+      </tbody>
+    </table>
+    <center/>
+    <br>
+
+    <h1>Agregar Eestudios</h1>
+
+    <form action="formularios-select-1.php" method="get">
+    <p>Año:
+      <select name="dato" style="vertical-align: top;">
+        <option selected="selected">...</option>
+
+          <option value="1">2005</option>
+          <option value="2">2006</option>
+          <option value="3">2007</option>
+          <option value="3">2008</option>
+          <option value="3">2009</option>
+          <option value="3">2010</option>
+          <option value="3">2011</option>
+          <option value="3">2012</option>
+          <option value="3">2013</option>
+          <option value="3">2014</option>
+          <option value="3">2015</option>
+          <option value="3">2016</option>
+          <option value="3">2017</option>
+          <option value="3">2018</option>
+          <option value="3">2019</option>
+      </select>
+    </p>
+    <p>Institucion: <input type="text" name="nombre" size="40"></p>
+    <p>Lugar: <input type="text" name="nombre" size="80"></p>
+    <br>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="hidden" name="origen" value="8">
+    </p>
+  </form>
+  <br>
+
+
+
+  <!-- para el pie de pagina cree 3 secciones las cuales me pedian y tambien
+  le di estilos visuales mediante css -->
+      <footer>
+          <section class="correo">
+              <h2>correo</h2>
+              <center>
+                <p>paginamedina@gmail.com</p>
+              <center/>
+          </section>
+
+          <section class="telefono">
+              <h2>telefono</h2>
+              <center>
+                  <p>+57-305-315-1444</p>
+              <center/>
+          </section>
+
+          <section class="fb">
+              <h2>redes sociales</h2>
+              <center>
+                <a href="https://web.facebook.com/daniel.mecoss" target="_blank"><img  id="ima1" src="img/facebook.png" alt="face"></a>
+              <center/>
+          </section>
+      </footer>
+
+    </body>
+  </html>

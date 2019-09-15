@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- entradas generales de html -->
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no ">
+      <link rel="stylesheet" href="css/main.css" />
+      <title>Hoja de Vida</title>
+    </head>
+<body>
+
+<!-- los estilos los puse en el mismo index ya que por alguna razon
+no se me dio para ponerlos con la hoja de estilos aparte aunque a lo
+ultimo si me sirvio asi que deje las dos opciones -->
+    <style type="text/css">
+       li {
+      display: inline;
+      }
+      li a {
+        font-family: Arial;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+        padding: 10px;
+        background-color: #2175bc;
+        color: #fff;
+      }
+      li a:hover {
+        background-color: #2586d7;
+        margin-top: -2;
+        padding-bottom: 12px;]
+      }
+      h1 {
+        color:#4D4A49;
+      }
+      h2{
+        color:#0A46E7;
+      }
+      h3{
+        color:#28D102;
+      }
+
+      h1,h2,h3 {
+        text-align: center;
+      }
+      ul{
+           float: left;
+           list-style-type: none;
+           padding: 0;
+           position: relative;
+           left: 50%;
+       }
+       li{
+           float: left;
+           position: relative;
+           right: 50%;
+       }
+
+       svg {
+         margin-left: 32%;
+         margin-right: 32%;
+       }
+       .footer{
+
+       }
+       footer{
+         width: 100%;
+         float: left;
+         clear: both;
+         box-shadow: 0px 2px 2px #000;
+         border-radius: 5px;
+         background: #5C5D5C;
+
+       }
+       footer section {
+         width: 440px;
+         float: left;
+         padding: 20px;
+       }
+
+    </style>
+
+<!-- esta es la imagen en svg la cual fue creada con inkscape -->
+    <svg width="400" height="220" viewBox="0 0 300 257">
+      <image width="400" height="470" xlink:href=img/inis.svg align="center"></image>
+    </svg>
+<!-- aca tenemos los datos generales como nombre, fecha de nacimiento -->
+    <h1>Hoja de Vida</h1>
+    <h2>Daniel Medina Cossio</h2>
+    <h3>Nacido en medellin, colombia</h3>
+    <h3>16 de mayo de 1988</h3>
+<!-- este es el menu el cual le di estilos mediante css ya que asi simple
+a mi parecer se veia muy feo para ser un menu -->
+    <ul id="button">
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="educacion.html"><strong>Educacion</strong></a></li>
+        <li><a href="Experiencia.html"><strong>Experiencia</strong></a></li>
+    </ul>
+    <!-- se le dio un espaciado para mejor visualizacion -->
+    <br><br>
+
+    <h2>Informacion Personal</h2>
+    <center>
+      <!-- esta imagen la busque en google y fue la que mas me gusto -->
+    <img  id="ima1" src="img/imagen1.jpg" alt="imagen1">
+    </center>
+
+
+    <section class="info">
+      <p >
+        <center>
+         Tecnico en sistemas, con competencias y habilidades
+         laborales orientadas al servicio al cliente,
+         conocimientos en instalacion de nuevo sofware,
+         ensamble de nuevo equipos, mantenimiento preventivo
+         y correctivo que garantice el funcionamiento del
+         hadware de los equipos, manejo de herramientas infomaticas,
+         redes sociales y colaborativas de acuerdo con el
+         proyecto a desarrollar, implementacion y configuracion
+         de redes de datos, promover la interaccion idonea
+         consigo mismo, con los emas y con la naturaleza en
+         los contextos laboral y social; con un buen desempeño
+         en los diversos problemas, creando y dando soluciones
+         adecuadas. De aprendizaje rapido y adaptacion en los
+         diferentes medios de trabajo.
+        <center/>
+     </p>
+    </section>
+
+
+
+<!-- para el pie de pagina cree 3 secciones las cuales me pedian y tambien
+le di estilos visuales mediante css -->
+    <footer>
+        <section class="correo">
+            <h2>correo</h2>
+            <center>
+              <p>paginamedina@gmail.com</p>
+            <center/>
+        </section>
+
+        <section class="telefono">
+            <h2>telefono</h2>
+            <center>
+                <p>+57-305-315-1444</p>
+            <center/>
+        </section>
+
+        <section class="fb">
+            <h2>redes sociales</h2>
+            <center>
+              <a href="https://web.facebook.com/daniel.mecoss" target="_blank"><img  id="ima1" src="img/facebook.png" alt="face"></a>
+            <center/>
+        </section>
+    </footer>
+
+  </body>
+</html>
